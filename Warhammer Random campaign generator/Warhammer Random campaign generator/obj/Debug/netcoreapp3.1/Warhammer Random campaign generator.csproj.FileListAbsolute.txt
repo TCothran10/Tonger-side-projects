@@ -12,3 +12,17 @@ C:\Users\Student\source\repos\Warhammer Random campaign generator\Warhammer Rand
 C:\Users\Student\source\repos\Warhammer Random campaign generator\Warhammer Random campaign generator\obj\Debug\netcoreapp3.1\Warhammer Random campaign generator.dll
 C:\Users\Student\source\repos\Warhammer Random campaign generator\Warhammer Random campaign generator\obj\Debug\netcoreapp3.1\Warhammer Random campaign generator.pdb
 C:\Users\Student\source\repos\Warhammer Random campaign generator\Warhammer Random campaign generator\obj\Debug\netcoreapp3.1\Warhammer Random campaign generator.genruntimeconfig.cache
+C:\Users\Student\Tonger-side-projects\Warhammer Random campaign generator\Warhammer Random campaign generator\bin\Debug\netcoreapp3.1\Warhammer Random campaign generator.exe
+C:\Users\Student\Tonger-side-projects\Warhammer Random campaign generator\Warhammer Random campaign generator\bin\Debug\netcoreapp3.1\Warhammer Random campaign generator.deps.json
+C:\Users\Student\Tonger-side-projects\Warhammer Random campaign generator\Warhammer Random campaign generator\bin\Debug\netcoreapp3.1\Warhammer Random campaign generator.runtimeconfig.json
+C:\Users\Student\Tonger-side-projects\Warhammer Random campaign generator\Warhammer Random campaign generator\bin\Debug\netcoreapp3.1\Warhammer Random campaign generator.runtimeconfig.dev.json
+C:\Users\Student\Tonger-side-projects\Warhammer Random campaign generator\Warhammer Random campaign generator\bin\Debug\netcoreapp3.1\Warhammer Random campaign generator.dll
+C:\Users\Student\Tonger-side-projects\Warhammer Random campaign generator\Warhammer Random campaign generator\bin\Debug\netcoreapp3.1\Warhammer Random campaign generator.pdb
+C:\Users\Student\Tonger-side-projects\Warhammer Random campaign generator\Warhammer Random campaign generator\obj\Debug\netcoreapp3.1\Warhammer Random campaign generator.csproj.AssemblyReference.cache
+C:\Users\Student\Tonger-side-projects\Warhammer Random campaign generator\Warhammer Random campaign generator\obj\Debug\netcoreapp3.1\Warhammer Random campaign generator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Student\Tonger-side-projects\Warhammer Random campaign generator\Warhammer Random campaign generator\obj\Debug\netcoreapp3.1\Warhammer Random campaign generator.AssemblyInfoInputs.cache
+C:\Users\Student\Tonger-side-projects\Warhammer Random campaign generator\Warhammer Random campaign generator\obj\Debug\netcoreapp3.1\Warhammer Random campaign generator.AssemblyInfo.cs
+C:\Users\Student\Tonger-side-projects\Warhammer Random campaign generator\Warhammer Random campaign generator\obj\Debug\netcoreapp3.1\Warhammer Random campaign generator.csproj.CoreCompileInputs.cache
+C:\Users\Student\Tonger-side-projects\Warhammer Random campaign generator\Warhammer Random campaign generator\obj\Debug\netcoreapp3.1\Warhammer Random campaign generator.dll
+C:\Users\Student\Tonger-side-projects\Warhammer Random campaign generator\Warhammer Random campaign generator\obj\Debug\netcoreapp3.1\Warhammer Random campaign generator.pdb
+C:\Users\Student\Tonger-side-projects\Warhammer Random campaign generator\Warhammer Random campaign generator\obj\Debug\netcoreapp3.1\Warhammer Random campaign generator.genruntimeconfig.cache
