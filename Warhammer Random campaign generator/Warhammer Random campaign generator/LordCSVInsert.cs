@@ -29,5 +29,10 @@ namespace Warhammer_Random_campaign_generator
             }
             return "Lords Added" + csvFilePath;
         }
+
+        internal void InsertLords(LordInfoUse lordInfoUse)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

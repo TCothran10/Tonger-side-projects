@@ -1,13 +1,19 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace Warhammer_Random_campaign_generator
+namespace RNG
 {
     public class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             TWWH3RandomLordGenerator userInterface = new TWWH3RandomLordGenerator();
             userInterface.Run();
         }
     }
-}
+
+
+    }
+
+
+

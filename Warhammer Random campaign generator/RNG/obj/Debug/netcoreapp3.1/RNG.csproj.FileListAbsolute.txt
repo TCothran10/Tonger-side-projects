@@ -1,0 +1,28 @@
+C:\Users\Student\source\repos\RNG\RNG\bin\Debug\netcoreapp3.1\RNG.exe
+C:\Users\Student\source\repos\RNG\RNG\bin\Debug\netcoreapp3.1\RNG.deps.json
+C:\Users\Student\source\repos\RNG\RNG\bin\Debug\netcoreapp3.1\RNG.runtimeconfig.json
+C:\Users\Student\source\repos\RNG\RNG\bin\Debug\netcoreapp3.1\RNG.runtimeconfig.dev.json
+C:\Users\Student\source\repos\RNG\RNG\bin\Debug\netcoreapp3.1\RNG.dll
+C:\Users\Student\source\repos\RNG\RNG\bin\Debug\netcoreapp3.1\RNG.pdb
+C:\Users\Student\source\repos\RNG\RNG\obj\Debug\netcoreapp3.1\RNG.csproj.AssemblyReference.cache
+C:\Users\Student\source\repos\RNG\RNG\obj\Debug\netcoreapp3.1\RNG.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Student\source\repos\RNG\RNG\obj\Debug\netcoreapp3.1\RNG.AssemblyInfoInputs.cache
+C:\Users\Student\source\repos\RNG\RNG\obj\Debug\netcoreapp3.1\RNG.AssemblyInfo.cs
+C:\Users\Student\source\repos\RNG\RNG\obj\Debug\netcoreapp3.1\RNG.csproj.CoreCompileInputs.cache
+C:\Users\Student\source\repos\RNG\RNG\obj\Debug\netcoreapp3.1\RNG.dll
+C:\Users\Student\source\repos\RNG\RNG\obj\Debug\netcoreapp3.1\RNG.pdb
+C:\Users\Student\source\repos\RNG\RNG\obj\Debug\netcoreapp3.1\RNG.genruntimeconfig.cache
+C:\Users\Student\Tonger-side-projects\Warhammer Random campaign generator\RNG\bin\Debug\netcoreapp3.1\RNG.exe
+C:\Users\Student\Tonger-side-projects\Warhammer Random campaign generator\RNG\bin\Debug\netcoreapp3.1\RNG.deps.json
+C:\Users\Student\Tonger-side-projects\Warhammer Random campaign generator\RNG\bin\Debug\netcoreapp3.1\RNG.runtimeconfig.json
+C:\Users\Student\Tonger-side-projects\Warhammer Random campaign generator\RNG\bin\Debug\netcoreapp3.1\RNG.runtimeconfig.dev.json
+C:\Users\Student\Tonger-side-projects\Warhammer Random campaign generator\RNG\bin\Debug\netcoreapp3.1\RNG.dll
+C:\Users\Student\Tonger-side-projects\Warhammer Random campaign generator\RNG\bin\Debug\netcoreapp3.1\RNG.pdb
+C:\Users\Student\Tonger-side-projects\Warhammer Random campaign generator\RNG\obj\Debug\netcoreapp3.1\RNG.csproj.AssemblyReference.cache
+C:\Users\Student\Tonger-side-projects\Warhammer Random campaign generator\RNG\obj\Debug\netcoreapp3.1\RNG.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Student\Tonger-side-projects\Warhammer Random campaign generator\RNG\obj\Debug\netcoreapp3.1\RNG.AssemblyInfoInputs.cache
+C:\Users\Student\Tonger-side-projects\Warhammer Random campaign generator\RNG\obj\Debug\netcoreapp3.1\RNG.AssemblyInfo.cs
+C:\Users\Student\Tonger-side-projects\Warhammer Random campaign generator\RNG\obj\Debug\netcoreapp3.1\RNG.csproj.CoreCompileInputs.cache
+C:\Users\Student\Tonger-side-projects\Warhammer Random campaign generator\RNG\obj\Debug\netcoreapp3.1\RNG.dll
+C:\Users\Student\Tonger-side-projects\Warhammer Random campaign generator\RNG\obj\Debug\netcoreapp3.1\RNG.pdb
+C:\Users\Student\Tonger-side-projects\Warhammer Random campaign generator\RNG\obj\Debug\netcoreapp3.1\RNG.genruntimeconfig.cache

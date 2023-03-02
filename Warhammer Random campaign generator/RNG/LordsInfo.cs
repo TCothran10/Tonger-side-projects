@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Warhammer_Random_campaign_generator
+namespace RNG
 {
     public class LordsInfo
     {
@@ -10,7 +10,7 @@ namespace Warhammer_Random_campaign_generator
         public string LordName { get; set; }
 
         public string GoodOrEvil { get; set; }
-        x
+
         public int StartingZone { get; set; }
 
 

@@ -6,8 +6,11 @@ namespace Warhammer_Random_campaign_generator
 {
     public class TWWH3RandomLordGenerator
     {
+        public static void Main(string[] args)
+        {
+
         private LordCSVInsert lordCSVInsert = new LordCSVInsert();
-        private LordInfoUse lordInfoUse = new LordInfoUse();        
+        private LordInfoUse lordInfoUse = new LordInfoUse();
         private List<LordsInfo> lordsList = new List<LordsInfo>();
 
 
@@ -40,7 +43,7 @@ namespace Warhammer_Random_campaign_generator
                         //SelectRandomLord();
                     }
 
-                    else if(mainMenuSelection == "2")
+                    else if (mainMenuSelection == "2")
                     {
                         //ChangeQuantityOfPlayers();
                     }
@@ -60,5 +63,10 @@ namespace Warhammer_Random_campaign_generator
 
 
         }
-    }   
-}
+
+    }
+
+  
+    }
+  }   
+
