@@ -12,24 +12,29 @@ namespace RNG
     {
         private LordCSVInsert lordCSVInsert = new LordCSVInsert();        
         private List<LordsInfo> lordsList = new List<LordsInfo>();
-        private LordInfoUse lordInfoUse = new LordInfoUse();
+        private ListManager lordInfoUse = new ListManager();
 
-
-        public void LordSelectMainMenu()
+        public void ApplicationTitle()
         {
 
             Console.WriteLine("\r\n░██╗░░░░░░░██╗░█████╗░██████╗░██╗░░██╗░█████╗░███╗░░░███╗███╗░░░███╗███████╗██████╗░  ██╗██╗██╗\r\n░██║░░██╗░░██║██╔══██╗██╔══██╗██║░░██║██╔══██╗████╗░████║████╗░████║██╔════╝██╔══██╗  ██║██║██║\r\n░╚██╗████╗██╔╝███████║██████╔╝███████║███████║██╔████╔██║██╔████╔██║█████╗░░██████╔╝  ██║██║██║\r\n░░████╔═████║░██╔══██║██╔══██╗██╔══██║██╔══██║██║╚██╔╝██║██║╚██╔╝██║██╔══╝░░██╔══██╗  ██║██║██║\r\n░░╚██╔╝░╚██╔╝░██║░░██║██║░░██║██║░░██║██║░░██║██║░╚═╝░██║██║░╚═╝░██║███████╗██║░░██║  ██║██║██║\r\n░░░╚═╝░░░╚═╝░░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░░░░╚═╝╚═╝░░░░░╚═╝╚══════╝╚═╝░░╚═╝  ╚═╝╚═╝╚═╝\r\n\r\n██╗░░░░░░█████╗░██████╗░██████╗░  ░██████╗███████╗██╗░░░░░███████╗░█████╗░████████╗░█████╗░██████╗░\r\n██║░░░░░██╔══██╗██╔══██╗██╔══██╗  ██╔════╝██╔════╝██║░░░░░██╔════╝██╔══██╗╚══██╔══╝██╔══██╗██╔══██╗\r\n██║░░░░░██║░░██║██████╔╝██║░░██║  ╚█████╗░█████╗░░██║░░░░░█████╗░░██║░░╚═╝░░░██║░░░██║░░██║██████╔╝\r\n██║░░░░░██║░░██║██╔══██╗██║░░██║  ░╚═══██╗██╔══╝░░██║░░░░░██╔══╝░░██║░░██╗░░░██║░░░██║░░██║██╔══██╗\r\n███████╗╚█████╔╝██║░░██║██████╔╝  ██████╔╝███████╗███████╗███████╗╚█████╔╝░░░██║░░░╚█████╔╝██║░░██║\r\n╚══════╝░╚════╝░╚═╝░░╚═╝╚═════╝░  ╚═════╝░╚══════╝╚══════╝╚══════╝░╚════╝░░░░╚═╝░░░░╚════╝░╚═╝░░╚═╝");
+        }
+        public void LordSelectMainMenu()
+        {
+            //Todo: Add  a prompt for player count before the main menu runs
+            //ToDo: Add parameters to the Random lord selection (So all parameters are handeled in that menu, elimiating the need for redundant menus)
+            
             Console.WriteLine();
             Console.WriteLine("\r\n█░░ █▀█ █▀█ █▀▄   █▀ █▀▀ █░░ █▀▀ █▀▀ ▀█▀   █▀▄▀█ █▀▀ █▄░█ █░█\r\n█▄▄ █▄█ █▀▄ █▄▀   ▄█ ██▄ █▄▄ ██▄ █▄▄ ░█░   █░▀░█ ██▄ █░▀█ █▄█");
             Console.WriteLine();
             Console.WriteLine(" \r\n▄▀ ▄█ ▀▄   █▀ █▀▀ █░░ █▀▀ █▀▀ ▀█▀   █▀█ ▄▀█ █▄░█ █▀▄ █▀█ █▀▄▀█   █░░ █▀█ █▀█ █▀▄\r\n▀▄ ░█ ▄▀   ▄█ ██▄ █▄▄ ██▄ █▄▄ ░█░   █▀▄ █▀█ █░▀█ █▄▀ █▄█ █░▀░█   █▄▄ █▄█ █▀▄ █▄▀");
-            Console.WriteLine(" \r\n▄▀ ▀█ ▀▄   █▀▀ █░█ ▄▀█ █▄░█ █▀▀ █▀▀   █▀█ █░█ ▄▀█ █▄░█ ▀█▀ █ ▀█▀ █▄█   █▀█ █▀▀   █▀█ █░░ ▄▀█ █▄█ █▀▀ █▀█ █▀\r\n▀▄ █▄ ▄▀   █▄▄ █▀█ █▀█ █░▀█ █▄█ ██▄   ▀▀█ █▄█ █▀█ █░▀█ ░█░ █ ░█░ ░█░   █▄█ █▀░   █▀▀ █▄▄ █▀█ ░█░ ██▄ █▀▄ ▄█");
-            Console.WriteLine(" \r\n▄▀ ▀▄   █▀▀ █░█ ▄▀█ █▄░█ █▀▀ █▀▀   █▀ █▀▀ █░░ █▀▀ █▀▀ ▀█▀ █ █▀█ █▄░█   █▀█ ▄▀█ █▀█ ▄▀█ █▀▄▀█ ▀█▀ █▀▀ █▀█ █▀\r\n▀▄ ▄▀   █▄▄ █▀█ █▀█ █░▀█ █▄█ ██▄   ▄█ ██▄ █▄▄ ██▄ █▄▄ ░█░ █ █▄█ █░▀█   █▀▀ █▀█ █▀▄ █▀█ █░▀░█ ░█░ ██▄ █▀▄ ▄█");
+            Console.WriteLine(" \r\n▄▀ ▀█ ▀▄   █▀▀ █░█ ▄▀█ █▄░█ █▀▀ █▀▀   █▀█ █░█ ▄▀█ █▄░█ ▀█▀ █ ▀█▀ █▄█   █▀█ █▀▀   █▀█ █░░ ▄▀█ █▄█ █▀▀ █▀█ █▀\r\n▀▄ █▄ ▄▀   █▄▄ █▀█ █▀█ █░▀█ █▄█ ██▄   ▀▀█ █▄█ █▀█ █░▀█ ░█░ █ ░█░ ░█░   █▄█ █▀░   █▀▀ █▄▄ █▀█ ░█░ ██▄ █▀▄ ▄█");           
             Console.WriteLine(" \r\n█▀█ █░░ █▀▀ ▄▀█ █▀ █▀▀   █▀ █▀▀ █░░ █▀▀ █▀▀ ▀█▀   █▀▄▀█ █▀▀ █▄░█ █░█   █▀█ █▀█ ▀█▀ █ █▀█ █▄░█\r\n█▀▀ █▄▄ ██▄ █▀█ ▄█ ██▄   ▄█ ██▄ █▄▄ ██▄ █▄▄ ░█░   █░▀░█ ██▄ █░▀█ █▄█   █▄█ █▀▀ ░█░ █ █▄█ █░▀█");
         }
 
         public void Run()
         {
+            ApplicationTitle();
             lordCSVInsert.InsertLords(lordInfoUse);
 
             bool keeprunning = true;
@@ -50,12 +55,7 @@ namespace RNG
                     else if (mainMenuSelection == "2")
                     {
                         //ChangeQuantityOfPlayers();
-                    }
-
-                    else if (mainMenuSelection == "3")
-                    {
-                        //ChangeSelectionParameters();
-                    }
+                    }                    
 
                     else
                     {
@@ -68,7 +68,7 @@ namespace RNG
         private void SelectRandomLord()
         {
             Random R = new Random();
-            int someRandomNumber = R.Next(0, lordsList.Count());
+            
             try
             {
                 Console.WriteLine();
@@ -76,17 +76,26 @@ namespace RNG
                 Console.WriteLine("|         Lord Name          |           Good or Evil         | Starting Zone |");
                 Console.WriteLine();
 
+<<<<<<< HEAD
 
 
                 foreach (LordsInfo lord in lordInfoUse.LordsLists)
                 {
                     
+=======
+                int index = R.Next(0, lordInfoUse.AllLords.Count());
+                LordsInfo lord = lordInfoUse.AllLords[index];
+                
+               
+                
+
+>>>>>>> fed1333765a47fd70cb82e7e45d954c2fbfc9189
                     Console.WriteLine();
                     Console.Write(lord.LordName.PadRight(30));
                     Console.Write(lord.GoodOrEvil.PadRight(40));
                     Console.Write(lord.StartingZone);
                     
-                }
+                
 
             }
             catch (IOException ex)

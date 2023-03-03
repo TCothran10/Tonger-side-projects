@@ -4,11 +4,11 @@ using System.Text;
 
 namespace RNG
 {
-    public class LordInfoUse
+    public class ListManager
     {
-        private readonly List<LordsInfo> lordsList = new List<LordsInfo>();
+        public List<LordsInfo> lordsList = new List<LordsInfo>();
 
-        public IEnumerable<LordsInfo> LordsLists
+        public IList<LordsInfo> AllLords
         {
             get
             {
