@@ -1,13 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Q8kZt9o/srZhL6rL0ISzAygLdQfBbUZHapO2Q2wKeGPGBGPab+CqonlWY3yzIRnbURNtIa0dUx0kPLzOFH+g5g==",
+  "dgSpecHash": "+lM47q2QBOiaDszmlK+po95OHm9wW3zerLQKe2yIObx0mWSAVNcP8lCCr52IYGTCnhCpa1zctOe1po/nRD0LNg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Tabber\\Tonger-side-projects\\Warhammer Random campaign generator\\RNG\\RNG.csproj",
+  "projectFilePath": "C:\\Users\\Student\\Tonger-side-projects\\Warhammer Random campaign generator\\RNG\\RNG.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Tabber\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\Tabber\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\Tabber\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
-    "C:\\Users\\Tabber\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.32\\microsoft.netcore.app.host.win-x64.3.1.32.nupkg.sha512"
+    "C:\\Users\\Student\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.32\\microsoft.netcore.app.host.win-x64.3.1.32.nupkg.sha512"
   ],
   "logs": []
 }
