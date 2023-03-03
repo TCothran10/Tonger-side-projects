@@ -16,8 +16,7 @@ namespace RNG
 
         public void PlayerCountSelect()
         {
-            Console.WriteLine("Please select Number of players (1-4" );
-            Console.ReadLine();
+            Console.WriteLine("Please select Number of players (1-4)" );            
         }
         public void ApplicationTitle()
         {
@@ -41,13 +40,35 @@ namespace RNG
         public void Run()
         {
             ApplicationTitle();
+
             lordCSVInsert.InsertLords(lordInfoUse);
 
             bool keeprunning = true;
 
             while (keeprunning == true)
             {
+                PlayerCountSelect();
+                string playerSelectCount = Console.ReadLine();
 
+                if (playerSelectCount == "1" || playerSelectCount == "2" || playerSelectCount == "3" || playerSelectCount == "4")
+                {
+                    if (playerSelectCount == "1")
+                    {
+                        LordSelectMainMenu();
+                    }
+                    else if (playerSelectCount == "2")
+                    {
+                        LordSelectMainMenu();
+                    }
+                    else if (playerSelectCount == "3")
+                    {
+                        LordSelectMainMenu();
+                    }
+                    else if (playerSelectCount == "4")
+                    {
+                        LordSelectMainMenu();
+                    }
+                }
                 LordSelectMainMenu();
                 string mainMenuSelection = Console.ReadLine();
 
