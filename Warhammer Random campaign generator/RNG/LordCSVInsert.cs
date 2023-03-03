@@ -11,11 +11,11 @@ namespace RNG
     public class LordCSVInsert
     {
 
-        public string InsertLords(LordInfoUse lordsInfoUse)
+        public string InsertLords(ListManager manager)
         {
-            string csvFilePath = @"C:\Users\Student\Tonger-side-projects\Warhammer Random campaign generator\Lords.csv";
+            string csvFilePath = @"C:\Users\Tabber\Tonger-side-projects\Warhammer Random campaign generator\Lords.csv";
 
-            using (StreamReader reader = new StreamReader(csvFilePath))
+            using ( StreamReader reader = new StreamReader(csvFilePath))
             {
                 while (!reader.EndOfStream)
                 {
@@ -30,13 +30,13 @@ namespace RNG
                     {
                         goodOrEvil = "Savior of the seven realms";
                         LordsInfo lordsInfo = new LordsInfo(lordName, goodOrEvil, startingZone);
-                        lordsInfoUse.NewLord(lordsInfo);
+                        manager.NewLord(lordsInfo);
                     }
                     else if (goodOrEvil == "evil")
                     {
                         goodOrEvil = "Destroyer of the seven realms";
                         LordsInfo lordsInfo = new LordsInfo(lordName, goodOrEvil, startingZone);
-                        lordsInfoUse.NewLord(lordsInfo);
+                        manager.NewLord(lordsInfo);
                     }
                 }
                
