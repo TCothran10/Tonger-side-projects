@@ -40,3 +40,4 @@ C:\Users\Tabber\Tonger-side-projects\Warhammer Random campaign generator\RNG\obj
 C:\Users\Tabber\Tonger-side-projects\Warhammer Random campaign generator\RNG\obj\Debug\netcoreapp3.1\RNG.dll
 C:\Users\Tabber\Tonger-side-projects\Warhammer Random campaign generator\RNG\obj\Debug\netcoreapp3.1\RNG.pdb
 C:\Users\Tabber\Tonger-side-projects\Warhammer Random campaign generator\RNG\obj\Debug\netcoreapp3.1\RNG.genruntimeconfig.cache
+C:\Users\Student\Tonger-side-projects\Warhammer Random campaign generator\RNG\bin\Debug\netcoreapp3.1\Lords.csv

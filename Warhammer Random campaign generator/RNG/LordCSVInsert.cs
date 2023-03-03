@@ -13,9 +13,9 @@ namespace RNG
 
         public string InsertLords(ListManager manager)
         {
-            string csvFilePath = @"C:\Users\Tabber\Tonger-side-projects\Warhammer Random campaign generator\Lords.csv";
+            System.IO.File.ReadAllText("Lords.csv");
 
-            using ( StreamReader reader = new StreamReader(csvFilePath))
+            using ( StreamReader reader = new StreamReader("Lords.Csv"))
             {
                 while (!reader.EndOfStream)
                 {
@@ -34,14 +34,14 @@ namespace RNG
                     }
                     else if (goodOrEvil == "evil")
                     {
-                        goodOrEvil = "Destroyer of the seven realms";
+                        goodOrEvil = "Blight of the seven realms";
                         LordsInfo lordsInfo = new LordsInfo(lordName, goodOrEvil, startingZone);
                         manager.NewLord(lordsInfo);
                     }
                 }
                
             }
-            return "Lords Added" + csvFilePath;
+            return "Lords Added";
         }
                
     }

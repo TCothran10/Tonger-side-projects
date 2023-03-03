@@ -14,6 +14,11 @@ namespace RNG
         private List<LordsInfo> lordsList = new List<LordsInfo>();
         private ListManager lordInfoUse = new ListManager();
 
+        public void PlayerCountSelect()
+        {
+            Console.WriteLine("Please select Number of players (1-4" );
+            Console.ReadLine();
+        }
         public void ApplicationTitle()
         {
 
@@ -21,14 +26,15 @@ namespace RNG
         }
         public void LordSelectMainMenu()
         {
-            //Todo: Add  a prompt for player count before the main menu runs
+            //Todo: Add \ a prompt for player count before the main menu runs
+            //ToDo: Make it so when one is pulled it is no longer able to be grabbed.
             //ToDo: Add parameters to the Random lord selection (So all parameters are handeled in that menu, elimiating the need for redundant menus)
             
             Console.WriteLine();
             Console.WriteLine("\r\n█░░ █▀█ █▀█ █▀▄   █▀ █▀▀ █░░ █▀▀ █▀▀ ▀█▀   █▀▄▀█ █▀▀ █▄░█ █░█\r\n█▄▄ █▄█ █▀▄ █▄▀   ▄█ ██▄ █▄▄ ██▄ █▄▄ ░█░   █░▀░█ ██▄ █░▀█ █▄█");
             Console.WriteLine();
             Console.WriteLine(" \r\n▄▀ ▄█ ▀▄   █▀ █▀▀ █░░ █▀▀ █▀▀ ▀█▀   █▀█ ▄▀█ █▄░█ █▀▄ █▀█ █▀▄▀█   █░░ █▀█ █▀█ █▀▄\r\n▀▄ ░█ ▄▀   ▄█ ██▄ █▄▄ ██▄ █▄▄ ░█░   █▀▄ █▀█ █░▀█ █▄▀ █▄█ █░▀░█   █▄▄ █▄█ █▀▄ █▄▀");
-            Console.WriteLine(" \r\n▄▀ ▀█ ▀▄   █▀▀ █░█ ▄▀█ █▄░█ █▀▀ █▀▀   █▀█ █░█ ▄▀█ █▄░█ ▀█▀ █ ▀█▀ █▄█   █▀█ █▀▀   █▀█ █░░ ▄▀█ █▄█ █▀▀ █▀█ █▀\r\n▀▄ █▄ ▄▀   █▄▄ █▀█ █▀█ █░▀█ █▄█ ██▄   ▀▀█ █▄█ █▀█ █░▀█ ░█░ █ ░█░ ░█░   █▄█ █▀░   █▀▀ █▄▄ █▀█ ░█░ ██▄ █▀▄ ▄█");           
+            Console.WriteLine("\r\n▄▀ ▀█ ▀▄   █▀▀ █░█ ▄▀█ █▄░█ █▀▀ █▀▀   █▀█ ▄▀█ █▀█ ▄▀█ █▀▄▀█ █▀▀ ▀█▀ █▀▀ █▀█ █▀\r\n▀▄ █▄ ▄▀   █▄▄ █▀█ █▀█ █░▀█ █▄█ ██▄   █▀▀ █▀█ █▀▄ █▀█ █░▀░█ ██▄ ░█░ ██▄ █▀▄ ▄█");           
             Console.WriteLine(" \r\n█▀█ █░░ █▀▀ ▄▀█ █▀ █▀▀   █▀ █▀▀ █░░ █▀▀ █▀▀ ▀█▀   █▀▄▀█ █▀▀ █▄░█ █░█   █▀█ █▀█ ▀█▀ █ █▀█ █▄░█\r\n█▀▀ █▄▄ ██▄ █▀█ ▄█ ██▄   ▄█ ██▄ █▄▄ ██▄ █▄▄ ░█░   █░▀░█ ██▄ █░▀█ █▄█   █▄█ █▀▀ ░█░ █ █▄█ █░▀█");
         }
 
@@ -72,30 +78,19 @@ namespace RNG
             try
             {
                 Console.WriteLine();
-
-                Console.WriteLine("|         Lord Name          |           Good or Evil         | Starting Zone |");
+                Console.WriteLine();
+                Console.WriteLine();
+                Console.WriteLine("|         Lord Name          |           Good or Evil          | Starting Zone |");
                 Console.WriteLine();
 
-<<<<<<< HEAD
-
-
-                foreach (LordsInfo lord in lordInfoUse.LordsLists)
-                {
-                    
-=======
                 int index = R.Next(0, lordInfoUse.AllLords.Count());
                 LordsInfo lord = lordInfoUse.AllLords[index];
-                
-               
-                
 
->>>>>>> fed1333765a47fd70cb82e7e45d954c2fbfc9189
-                    Console.WriteLine();
-                    Console.Write(lord.LordName.PadRight(30));
-                    Console.Write(lord.GoodOrEvil.PadRight(40));
-                    Console.Write(lord.StartingZone);
-                    
-                
+                Console.Write(lord.LordName.PadRight(34));
+                Console.Write(lord.GoodOrEvil.PadRight(37));
+                Console.Write(lord.StartingZone);
+                Console.WriteLine();
+                Console.WriteLine();
 
             }
             catch (IOException ex)
@@ -104,7 +99,7 @@ namespace RNG
             }
             catch (FormatException ex)
             {
-                Console.WriteLine("Data file provided is in incorrect format");
+                Console.WriteLine("Data file provided is in incorrect format" + ex.Message);
             }
 
         }
