@@ -13,6 +13,8 @@ namespace RNG
 
         public int StartingZone { get; set; }
 
+        public bool IsAvailable { get; set; } = true;
+
 
 
         public LordsInfo(string lordName, string goodOrEvil, int startingZone)

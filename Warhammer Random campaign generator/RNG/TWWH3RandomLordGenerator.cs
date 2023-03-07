@@ -48,35 +48,17 @@ namespace RNG
             while (keeprunning == true)
             {
                 PlayerCountSelect();
-                string playerSelectCount = Console.ReadLine();
-
-                if (playerSelectCount == "1" || playerSelectCount == "2" || playerSelectCount == "3" || playerSelectCount == "4")
-                {
-                    if (playerSelectCount == "1")
-                    {
-                        LordSelectMainMenu();
-                    }
-                    else if (playerSelectCount == "2")
-                    {
-                        LordSelectMainMenu();
-                    }
-                    else if (playerSelectCount == "3")
-                    {
-                        LordSelectMainMenu();
-                    }
-                    else if (playerSelectCount == "4")
-                    {
-                        LordSelectMainMenu();
-                    }
-                }
+                int playerSelectCount = Int32.Parse(Console.ReadLine());
                 LordSelectMainMenu();
+                
+                
                 string mainMenuSelection = Console.ReadLine();
 
                 if (mainMenuSelection == "1" || mainMenuSelection == "2" || mainMenuSelection == "3")
                 {
                     if (mainMenuSelection == "1")
                     {
-                        SelectRandomLord();
+                       SelectRandomLord1(playerSelectCount);
                     }
 
                     else if (mainMenuSelection == "2")
@@ -92,7 +74,8 @@ namespace RNG
                 }
             }
         }
-        private void SelectRandomLord()
+
+        private void SelectRandomLord1(int numberOfPlayers)
         {
             Random R = new Random();
             
@@ -103,16 +86,33 @@ namespace RNG
                 Console.WriteLine();
                 Console.WriteLine("|         Lord Name          |           Good or Evil          | Starting Zone |");
                 Console.WriteLine();
+                int Count = 1;
 
-                int index = R.Next(0, lordInfoUse.AllLords.Count());
-                LordsInfo lord = lordInfoUse.AllLords[index];
+                while (Count <= numberOfPlayers)
+                {
 
-                Console.Write(lord.LordName.PadRight(34));
-                Console.Write(lord.GoodOrEvil.PadRight(37));
-                Console.Write(lord.StartingZone);
-                Console.WriteLine();
-                Console.WriteLine();
 
+                    int index = R.Next(0, lordInfoUse.AllLords.Count());
+                    LordsInfo lord = lordInfoUse.AllLords[index];
+                    if (numberOfPlayers >= 5 || numberOfPlayers <= 0)
+                    {
+                        Console.WriteLine("Invalid Player selection please select valid player count");
+                        Run();
+                    }
+                    else if (lord.IsAvailable)
+                    {
+                        Console.Write(lord.LordName.PadRight(34));
+                        Console.Write(lord.GoodOrEvil.PadRight(37));
+                        Console.Write(lord.StartingZone);
+                        Console.WriteLine();
+                        Console.WriteLine();
+
+                        Count++;
+                        lord.IsAvailable = false;
+                    }
+
+                    
+                }
             }
             catch (IOException ex)
             {
@@ -121,9 +121,9 @@ namespace RNG
             catch (FormatException ex)
             {
                 Console.WriteLine("Data file provided is in incorrect format" + ex.Message);
-            }
+            }      
+       
 
         }
-
     }
 }
