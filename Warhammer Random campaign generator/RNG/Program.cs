@@ -13,25 +13,7 @@ namespace RNG
     }
 
 
-    }
-/*if (playerSelectCount == "1" || playerSelectCount == "2" || playerSelectCount == "3" || playerSelectCount == "4")
-                {
-                    if (playerSelectCount == "1")
-                    {
-                        LordSelectMainMenu();
-                    }
-                    else if (playerSelectCount == "2")
-                    {
-                        LordSelectMainMenu();
-                    }
-                    else if (playerSelectCount == "3")
-                    {
-                        LordSelectMainMenu();
-                    }
-                    else if (playerSelectCount == "4")
-                    {
-                        LordSelectMainMenu();
-                    }
-                }*/
+ }
+
 
 
