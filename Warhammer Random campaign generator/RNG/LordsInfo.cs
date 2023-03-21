@@ -4,6 +4,7 @@ using System.Text;
 
 namespace RNG
 {
+    //Instanciating all the info for lords
     public class LordsInfo
     {
 

@@ -10,14 +10,18 @@ namespace RNG
 {
     public class TWWH3RandomLordGenerator
     {
+        // Direct connections to other classes allowing use of the contents of those classes
+        
         private LordCSVInsert lordCSVInsert = new LordCSVInsert();        
         private List<LordsInfo> lordsList = new List<LordsInfo>();
         private ListManager lordInfoUse = new ListManager();
 
+        //what appears on the main menu to select players
         public void PlayerCountSelect()
         {
             Console.WriteLine("Please select Number of players (1-4)" );            
         }
+        //What presents the text of "Warhammer III lord selector"
         public void ApplicationTitle()
         {
 
@@ -36,7 +40,8 @@ namespace RNG
             Console.WriteLine("\r\n▄▀ ▀█ ▀▄   █▀▀ █░█ ▄▀█ █▄░█ █▀▀ █▀▀   █▀█ ▄▀█ █▀█ ▄▀█ █▀▄▀█ █▀▀ ▀█▀ █▀▀ █▀█ █▀\r\n▀▄ █▄ ▄▀   █▄▄ █▀█ █▀█ █░▀█ █▄█ ██▄   █▀▀ █▀█ █▀▄ █▀█ █░▀░█ ██▄ ░█░ ██▄ █▀▄ ▄█");           
             Console.WriteLine(" \r\n█▀█ █░░ █▀▀ ▄▀█ █▀ █▀▀   █▀ █▀▀ █░░ █▀▀ █▀▀ ▀█▀   █▀▄▀█ █▀▀ █▄░█ █░█   █▀█ █▀█ ▀█▀ █ █▀█ █▄░█\r\n█▀▀ █▄▄ ██▄ █▀█ ▄█ ██▄   ▄█ ██▄ █▄▄ ██▄ █▄▄ ░█░   █░▀░█ ██▄ █░▀█ █▄█   █▄█ █▀▀ ░█░ █ █▄█ █░▀█");
         }
-
+        // What hapens when F5 is hit. this is the order in which the user is prompted information and realistically acts almost as a main menu taking you from
+        // One part of the application to the other.
         public void Run()
         {
             ApplicationTitle();
@@ -44,7 +49,7 @@ namespace RNG
             lordCSVInsert.InsertLords(lordInfoUse);
 
             bool keeprunning = true;
-
+            //This while loop is entered and once entered puts you into the main menu where the user input changes where in the application we are setting.
             while (keeprunning == true)
             {
                 PlayerCountSelect();
@@ -56,6 +61,7 @@ namespace RNG
 
                 if (mainMenuSelection == "1" || mainMenuSelection == "2" || mainMenuSelection == "3")
                 {
+                    // See "SelectRandomLord" for the use of this 
                     if (mainMenuSelection == "1")
                     {
                        SelectRandomLord1(playerSelectCount);
@@ -74,7 +80,8 @@ namespace RNG
                 }
             }
         }
-
+        // This Is where the random generator is located, this finds the lords and prints them out in the console. this uses the Lords.csv file to find the lords and the 
+        // "LordCSVInsert" breaks them down so they can be printed  as indipendent items.
         private void SelectRandomLord1(int numberOfPlayers)
         {
             Random R = new Random();

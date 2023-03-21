@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 namespace RNG
 {
+    // just the function that happens when f5 is hit
     public class Program
     {
         static void Main(string[] args)
@@ -13,25 +14,5 @@ namespace RNG
     }
 
 
-    }
-/*if (playerSelectCount == "1" || playerSelectCount == "2" || playerSelectCount == "3" || playerSelectCount == "4")
-                {
-                    if (playerSelectCount == "1")
-                    {
-                        LordSelectMainMenu();
-                    }
-                    else if (playerSelectCount == "2")
-                    {
-                        LordSelectMainMenu();
-                    }
-                    else if (playerSelectCount == "3")
-                    {
-                        LordSelectMainMenu();
-                    }
-                    else if (playerSelectCount == "4")
-                    {
-                        LordSelectMainMenu();
-                    }
-                }*/
-
+ }
 

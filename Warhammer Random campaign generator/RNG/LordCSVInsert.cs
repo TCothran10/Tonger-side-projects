@@ -10,6 +10,9 @@ namespace RNG
 {
     public class LordCSVInsert
     {
+        //This class is where we read the "Lords.csv" file and import the data
+        //the information is then broken down into individual pieces letting them be read  and utilized
+
 
         public string InsertLords(ListManager manager)
         {
