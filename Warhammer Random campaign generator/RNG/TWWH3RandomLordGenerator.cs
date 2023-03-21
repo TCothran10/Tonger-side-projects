@@ -15,6 +15,7 @@ namespace RNG
         private LordCSVInsert lordCSVInsert = new LordCSVInsert();        
         private List<LordsInfo> lordsList = new List<LordsInfo>();
         private ListManager lordInfoUse = new ListManager();
+        private string SaviorOrBlight = "both";
 
         //what appears on the main menu to select players
         public void PlayerCountSelect()
@@ -29,8 +30,8 @@ namespace RNG
         }
         public void LordSelectMainMenu()
         {
-            //Todo: Add \ a prompt for player count before the main menu runs
-            //ToDo: Make it so when one is pulled it is no longer able to be grabbed.
+            
+            
             //ToDo: Add parameters to the Random lord selection (So all parameters are handeled in that menu, elimiating the need for redundant menus)
             
             Console.WriteLine();
@@ -49,40 +50,71 @@ namespace RNG
             lordCSVInsert.InsertLords(lordInfoUse);
 
             bool keeprunning = true;
+<<<<<<< HEAD
             //This while loop is entered and once entered puts you into the main menu where the user input changes where in the application we are setting.
+=======
+
+            PlayerCountSelect();
+            int playerSelectCount = Int32.Parse(Console.ReadLine());
+           
+
+>>>>>>> c47649665b2fbd3cdace6554cec7b36969186f26
             while (keeprunning == true)
             {
-                PlayerCountSelect();
-                int playerSelectCount = Int32.Parse(Console.ReadLine());
                 LordSelectMainMenu();
-                
-                
+
                 string mainMenuSelection = Console.ReadLine();
 
-                if (mainMenuSelection == "1" || mainMenuSelection == "2" || mainMenuSelection == "3")
+                if (mainMenuSelection == "1" || mainMenuSelection == "2")
                 {
                     // See "SelectRandomLord" for the use of this 
                     if (mainMenuSelection == "1")
                     {
-                       SelectRandomLord1(playerSelectCount);
+                       SelectRandomLord(playerSelectCount);
                     }
 
                     else if (mainMenuSelection == "2")
                     {
-                        //ChangeQuantityOfPlayers();
+                       SaviorOrBlight = ChangeParameters();
+                       
                     }                    
 
                     else
                     {
                         Console.WriteLine("Please Select a menu option");
-                        //SelectRandomLord();
+                        SelectRandomLord(playerSelectCount);
                     }
                 }
             }
         }
+<<<<<<< HEAD
         // This Is where the random generator is located, this finds the lords and prints them out in the console. this uses the Lords.csv file to find the lords and the 
         // "LordCSVInsert" breaks them down so they can be printed  as indipendent items.
         private void SelectRandomLord1(int numberOfPlayers)
+=======
+        public string ChangeParameters()
+        {
+            Console.WriteLine("Would you like to Play as a Savior or Blight of the seven realms");
+            Console.WriteLine("(1) Savior");
+            Console.WriteLine("(2) Blight");            
+            string goodOrEvilChange = Console.ReadLine();
+
+            if (goodOrEvilChange == "1" || goodOrEvilChange == "2")
+            {
+                if (goodOrEvilChange == "1")
+                {
+                    return "Savior ";
+                }
+                if (goodOrEvilChange == "2")
+                {
+                    return "Blight ";
+                }               
+            }
+            return "Invalid choice ";            
+        }
+
+        private void SelectRandomLord(int numberOfPlayers)
+>>>>>>> c47649665b2fbd3cdace6554cec7b36969186f26
         {
             Random R = new Random();
             
@@ -91,13 +123,32 @@ namespace RNG
                 Console.WriteLine();
                 Console.WriteLine();
                 Console.WriteLine();
-                Console.WriteLine("|         Lord Name          |           Good or Evil          | Starting Zone |");
+                Console.WriteLine("|         Lord Name          |           Savior or Blight          | Starting Zone |");
                 Console.WriteLine();
                 int Count = 1;
 
                 while (Count <= numberOfPlayers)
                 {
+                    if (SaviorOrBlight == "both")
+                    {
 
+
+                    }
+                    else if (SaviorOrBlight == "Savior")
+                    {
+                        
+                    }
+                    else if (SaviorOrBlight == "Blight")
+                    {
+                        foreach (LordsInfo lords in lordInfoUse.AllLords)
+                        {
+                            // TODO Check the property for "goodorevil" in "lords" element for "blight"
+
+                            // TODO If lord is a blight lord, then add that element to the new array for blight lords
+
+                            // TODO Select blight lord from new array (in a similar way you are currently selecting lords)
+                        }
+                    }
 
                     int index = R.Next(0, lordInfoUse.AllLords.Count());
                     LordsInfo lord = lordInfoUse.AllLords[index];
@@ -108,6 +159,7 @@ namespace RNG
                     }
                     else if (lord.IsAvailable)
                     {
+                        
                         Console.Write(lord.LordName.PadRight(34));
                         Console.Write(lord.GoodOrEvil.PadRight(37));
                         Console.Write(lord.StartingZone);
@@ -132,5 +184,6 @@ namespace RNG
        
 
         }
+
     }
 }
