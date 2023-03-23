@@ -50,15 +50,13 @@ namespace RNG
             lordCSVInsert.InsertLords(lordInfoUse);
 
             bool keeprunning = true;
-<<<<<<< HEAD
             //This while loop is entered and once entered puts you into the main menu where the user input changes where in the application we are setting.
-=======
 
             PlayerCountSelect();
             int playerSelectCount = Int32.Parse(Console.ReadLine());
            
 
->>>>>>> c47649665b2fbd3cdace6554cec7b36969186f26
+
             while (keeprunning == true)
             {
                 LordSelectMainMenu();
@@ -75,7 +73,7 @@ namespace RNG
 
                     else if (mainMenuSelection == "2")
                     {
-                       SaviorOrBlight = ChangeParameters();
+                       //SaviorOrBlight = ChangeParameters();
                        
                     }                    
 
@@ -87,34 +85,10 @@ namespace RNG
                 }
             }
         }
-<<<<<<< HEAD
         // This Is where the random generator is located, this finds the lords and prints them out in the console. this uses the Lords.csv file to find the lords and the 
         // "LordCSVInsert" breaks them down so they can be printed  as indipendent items.
-        private void SelectRandomLord1(int numberOfPlayers)
-=======
-        public string ChangeParameters()
-        {
-            Console.WriteLine("Would you like to Play as a Savior or Blight of the seven realms");
-            Console.WriteLine("(1) Savior");
-            Console.WriteLine("(2) Blight");            
-            string goodOrEvilChange = Console.ReadLine();
-
-            if (goodOrEvilChange == "1" || goodOrEvilChange == "2")
-            {
-                if (goodOrEvilChange == "1")
-                {
-                    return "Savior ";
-                }
-                if (goodOrEvilChange == "2")
-                {
-                    return "Blight ";
-                }               
-            }
-            return "Invalid choice ";            
-        }
-
+ 
         private void SelectRandomLord(int numberOfPlayers)
->>>>>>> c47649665b2fbd3cdace6554cec7b36969186f26
         {
             Random R = new Random();
             
